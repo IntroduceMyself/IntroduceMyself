@@ -5,53 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung Kien</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         body {
-            background-color: #ADD8E6; /* Màu nền cho toàn bộ trang */
+            background-color: #f8ecec;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .hobbies-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .about-section {
+            background-color: #fbf6f6;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <div>
-            <section>
-                <img src="337384840_627274882565793_459827727700924946_n.jpg" alt="Me!"
-                    style=" border-radius:  50%; width: 200px;height: 200px;">
-                <h1 style="font-size: 150%;color: brown;">Nguyen Trung Kien</h1>
-                <p style="font-size: medium; color: rgb(56, 24, 154);"> Software Engineer Student/Java Backend Developer
-                </p>
-            </section>
-        </div>
+    <main class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <img src="337384840_627274882565793_459827727700924946_n.jpg" alt="Me!" class="profile-img animate__animated animate__fadeIn">
+                <h1 class="text-brown" style="color: brown;">Nguyen Trung Kien</h1>
+                <p class="fw-light">Software Engineer</p>
+            </div>
 
-        <div>
-            <article>
-                <h1 style="color: brown;">About Me!</h1>
-                <ul style="color:  rgb(56, 24, 154);">
+            <div class="col-md-8 about-section">
+                <h2 class="text-brown" style="color: lightseagreen;">About Me!</h2>
+                <ul class="list-unstyled">
                     <li>I come from Vietnam, grew up in Long Xuyen city, An Giang province.</li>
                     <li>I was born in 2005 and am currently a sophomore at FPT University.</li>
-                    <li>I am an Information Technology student, proficient in programming languages ​​such as: C/C++,
-                        Java, Python and currently researching HTML, CSS, JavaScript languages.</li>
+                    <li>I am an Information Technology student, proficient in programming languages such as C/C++, Java, Python, and HTML, CSS, JavaScript.</li>
                 </ul>
-                <h2 style="color: rgb(81, 144, 68);font-size: 130%;">My Hobbies:3</h2>
-                 <img src="446100754_3748786492060286_673959407267258820_n.jpg"
-                        alt="Me!"  style="border-radius:50%;float: left;width: 150px; height: 150px; margin-right: 110px;">
-                 <img src="444496939_2996480513837842_4176931565396913539_n.jpg"
-                    alt="Me!" style="border-radius:50%;width: 150px;height: 150px;margin-left: 0%;">
-                <ul style="color: rgb(70, 195, 161); margin-right: 50%;font-size: 130%;">
+                <h3 class="text-success mt-4">My Hobbies :3</h3>
+                <div class="d-flex justify-content-start">
+                    <img src="446100754_3748786492060286_673959407267258820_n.jpg" alt="Me!" class="hobbies-img">
+                    <img src="444496939_2996480513837842_4176931565396913539_n.jpg" alt="Me!" class="hobbies-img">
+                </div>
+                <ul class="text-info mt-3">
                     <li>Traveling</li>
                     <li>Landscape photography</li>
                 </ul>
-            </article>
+            </div>
         </div>
-        <div>
-            <h1 style="font-size: 170%;">Contact with me</h1>
-            <img src="icons8-facebook-50.png" style="width: 30px;height: 30px;" alt="facebook">
-            <a href="https://www.facebook.com/profile.php?id=100006987526027">Trung Kiên</a>
-            <img src="icons8-instagram-old-50.png" style="width: 30px;height: 30px;" alt="instagram">
-            <a href="https://www.instagram.com/konkin.unme/">konkin.unme</a>
+
+        <div class="row mt-5 text-center">
+            <div class="col-12">
+                <h2>Contact with me</h2>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100006987526027" class="btn btn-primary">
+                        <img src="icons8-facebook-50.png" alt="facebook"> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/konkin.unme/" class="btn btn-danger">
+                        <img src="icons8-instagram-old-50.png" alt="instagram"> Instagram
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
