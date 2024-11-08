@@ -36,7 +36,7 @@
                             style="color: aliceblue;">Project</a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-dark ms-auto" href="#contact" id="ct">Contact With Me</a>
+                <a class="btn btn-outline-dark ms-auto" href="#contact" id="ct">Contact Me</a>
             </div>
         </div>
     </nav>
@@ -45,8 +45,7 @@
         <div class="container-fluid">
             <div class="text-center text-white py-5">
                 <div class="image-container position-relative">
-                    <img src="z6009724881097_94ef17916bfff41e5c94d6b5c7fff9be.jpg"
-                        alt="hinh avatar" class="avatar-img">
+                    <img src="z6009724881097_94ef17916bfff41e5c94d6b5c7fff9be.jpg" alt="hinh avatar" class="avatar-img">
                     <span class="hi-text">Hi!</span>
                 </div>
                 <h1 id="about" class="fw-bolder mt-4" style="font-family: cursive; color: rgb(193, 238, 223);">Nguyen
@@ -57,7 +56,7 @@
     </header>
 
     <!-- phan about -->
-    <section>
+    <section class="fade-in">
         <div class="container-fluid">
             <div class="about">
                 <h1>About Me!</h1>
@@ -73,7 +72,7 @@
         </div>
     </section>
     <!-- phan hobbies -->
-    <section id="Interests" class="interests-container">
+    <section class="fade-in" id="Interests" class="interests-container">
         <div class="container">
             <p class="interests-title">Interests</p>
             <p class="interests-description">Some things I enjoy learning about and doing</p>
@@ -101,7 +100,7 @@
     </section>
 
     <!--study-->
-    <section id="study" style="background-color: #2e2e2e; padding: 40px 0;">
+    <section class="fade-in" id="study" style="background-color: #2e2e2e; padding: 40px 0;">
         <div class="container">
             <h2 style="font-family:cursive;color:#fff; text-align: center; font-size: 36px; margin-bottom: 30px;">My
                 Programming Language
@@ -133,7 +132,7 @@
         </div>
     </section>
     <!-- phan contact -->
-    <section id="contact" style="background-color: #2e2e2e; padding: 60px 0;">
+    <section class="fade-in" id="contact" style="background-color: #2e2e2e; padding: 60px 0;">
         <div class="container text-center">
             <h1 class="text-white mb-4" style="font-size: 36px; font-family: 'Arial', sans-serif;">Contact</h1>
             <p class="text-muted mb-5" style="font-size: 18px;">
@@ -141,12 +140,10 @@
             </p>
             <div class="social-icons d-flex justify-content-center mb-4">
                 <a href="https://www.facebook.com/profile.php?id=100006987526027" target="_blank" class="mx-3">
-                    <img src="icons8-facebook-50.png" alt="facebooklogo"
-                        class="social-icon">
+                    <img src="icons8-facebook-50.png" alt="facebooklogo" class="social-icon">
                 </a>
                 <a href="https://www.instagram.com/konkin.unme/" target="_blank" class="mx-3">
-                    <img src="icons8-instagram-old-50.png" alt="Iglogo"
-                        class="social-icon">
+                    <img src="icons8-instagram-old-50.png" alt="Iglogo" class="social-icon">
                 </a>
                 <a href="https://www.threads.net/@konkin.unme?xmt=AQGzmKTiKpGZDj_2w_K3-A4aCu1HVb3-I4fASEenYjSDbFI"
                     target="_blank" class="mx-3">
@@ -160,7 +157,30 @@
             </div>
         </div>
     </section>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faders = document.querySelectorAll(".fade-in");
+    
+            const appearOnScroll = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        } else {
+                            entry.target.classList.remove("visible"); 
+                        }
+                    });
+                },
+                {
+                    threshold: 0.3, 
+                }
+            );
+    
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
     <script src="bootstrap.js"></script>
 </body>
 
