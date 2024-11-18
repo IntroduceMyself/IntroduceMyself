@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung Kien</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <!-- thanh nav ở trên -->
+    <nav class="navbar navbar-expand-lg" style="border-bottom: 2px solid #ffffff; padding-bottom: 10px;">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#about"
+                style="color: aliceblue; font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Trung
+                Kien</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="border-bottom: 2px solid #ffffff; padding-bottom: 10px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle ms-3 " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Interests">Interests</a></li>
+                            <li><a class="dropdown-item" href="#study">Study</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark ms-3" href="#project"
+                            style="color: aliceblue;">Project</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark ms-auto" href="#contact" id="ct">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- bắt đầu phần thân -->
+    <header>
+        <div class="container-fluid">
+            <div class="text-center text-white py-5">
+                <div class="image-container position-relative">
+                    <img src="z6009724881097_94ef17916bfff41e5c94d6b5c7fff9be.jpg" alt="hinh avatar" class="avatar-img">
+                    <span class="hi-text">Hi!</span>
+                </div>
+                <h1 id="about" class="fw-bolder mt-4"
+                    style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(193, 238, 223);">
+                    I'm Kien
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- phan about -->
+    <section class="fade-in">
+        <div class="container-fluid">
+            <div class="about">
+                <h1>About Me!</h1>
+                <p>
+                    "I’m from Vietnam, where I grew up in the vibrant city of Long Xuyen, An Giang province. Born in
+                    2005, I’ve always had a deep connection to my roots, and I take pride in the rich culture and
+                    history of my hometown. Welcome to my personal website! Here, you’ll find information about my
+                    projects, my academic journey, and my interests in tech. I’m always excited to connect with fellow
+                    tech enthusiasts and professionals, so feel free to explore and reach out if you want to collaborate
+                    or chat!"
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- phan hobbies -->
+    <section class="fade-in" id="Interests" class="interests-container">
+        <div class="container">
+            <p class="interests-title">Interests</p>
+            <p class="interests-description">Some things I enjoy learning about and doing</p>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="interest-card text-center">SOFTWARE</div>
+                </div>
+                <div class="col">
+                    <div class="interest-card text-center">TRAVELING</div>
+                </div>
+                <div class="col">
+                    <div class="interest-card text-center">PHOTOGRAPHY</div>
+                </div>
+                <div class="col">
+                    <div class="interest-card text-center">LANGUAGES</div>
+                </div>
+                <div class="col">
+                    <div class="interest-card text-center">HISTORY</div>
+                </div>
+                <div class="col">
+                    <div class="interest-card text-center">MUSIC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--study-->
+    <section class="fade-in" id="study" style="background-color: #2e2e2e; padding: 40px 0;">
+        <div class="container">
+            <h2
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color:#fff; text-align: center; font-size: 36px; margin-bottom: 30px;">
+                My
+                Programming Language
+                Learning Progress</h2>
+
+            <div class="progress-bar">
+                <div class="progress cpp" style="width: 80%;">C/C++ - 80%</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress java" style="width: 70%;">Java - 70%</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress python" style="width: 90%;">Python - 90%</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress html" style="width: 85%;">HTML - 85%</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress css" style="width: 75%;">CSS - 75%</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress javascript" style="width: 80%;">JavaScript - 80%</div>
+            </div>
+        </div>
+    </section>
+    <!-- phan contact -->
+    <section class="fade-in" id="contact" style="background-color: #2e2e2e; padding: 60px 0;">
+        <div class="container text-center">
+            <h1 class="text-white mb-4" style="font-size: 36px; font-family: 'Arial', sans-serif;">Contact</h1>
+            <p class="text-muted mb-5" style="font-size: 18px;">
+                Feel free to reach out to me via social media or email. I look forward to connecting with you!
+            </p>
+            <div class="social-icons d-flex justify-content-center mb-4">
+                <a  href="https://www.facebook.com/profile.php?id=100006987526027" target="_blank" class="mx-3">
+                    <img src="facebook.png" alt="facebooklogo" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/konkin.unme/" target="_blank" class="mx-3">
+                    <img src="social.png" alt="Iglogo" class="social-icon">
+                </a>
+                <a href="https://www.threads.net/@konkin.unme?xmt=AQGzmKTiKpGZDj_2w_K3-A4aCu1HVb3-I4fASEenYjSDbFI"
+                    target="_blank" class="mx-3">
+                    <img src="threads.png" alt="threadslogo" class="social-icon">
+                </a>
+            </div>
+            <div>
+                <p class="text-white" style="font-size: 18px;">Or, you can reach me at:</p>
+                <p class="text-white" style="font-size: 18px;">Email: nguyenzibralic@gmail.com</p>
+                <p class="text-white" style="font-size: 18px;">Phone: 0918607291</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faders = document.querySelectorAll(".fade-in");
+
+            const appearOnScroll = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        } else {
+                            entry.target.classList.remove("visible");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.3,
+                }
+            );
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+    <script>
+        // Hiển thị nút khi cuộn xuống 20px
+        window.onscroll = function () {
+            toggleBackToTopButton();
+        };
+
+        function toggleBackToTopButton() {
+            const button = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Cuộn lên đầu trang khi nhấn vào nút
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script src="bootstrap.js"></script>
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+</body>
+
+</html>
